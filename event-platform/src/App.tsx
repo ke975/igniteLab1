@@ -31,7 +31,7 @@ const {data }= useQuery<{lessons:Lesson[]}>(GET_lESSONS_QUERY)
         <ul>
 
           {data?.lessons.map(lesson=>{
-            return <li key={lesson.id}>{lesson.title}</li>
+            return <li key={lesson.id}>{lesson.title} {lesson.name}</li>
           })}
         </ul>
     </div>
